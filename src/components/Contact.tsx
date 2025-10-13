@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Github, Linkedin, Send } from "lucide-react";
+import { SiDiscord } from "@icons-pack/react-simple-icons";
+
 import { useState, FormEvent } from "react";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from "@emailjs/browser";
@@ -140,6 +142,15 @@ const Contact = () => {
             >
               <Linkedin className="h-6 w-6 group-hover:scale-110 transition-transform" />
               <span className="hidden sm:inline">LinkedIn</span>
+            </a>
+            <a
+              href="https://discordapp.com/users/583517023787810816"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
+            >
+              <SiDiscord className="h-6 w-6 group-hover:scale-110 transition-transform" />
+              <span className="hidden sm:inline">Discord</span>
             </a>
           </div>
         </div>
